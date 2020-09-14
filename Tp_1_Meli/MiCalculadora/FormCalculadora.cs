@@ -46,7 +46,7 @@ namespace MiCalculadora
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Numero num1 = new Numero();
-            string resultado = num1.DecimalBinario(lblResultado.ToString());
+            string resultado = num1.DecimalBinario(lblResultado.Text);
             this.lblResultado.Text = resultado;
         }
 

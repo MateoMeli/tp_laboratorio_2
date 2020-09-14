@@ -79,11 +79,22 @@ namespace Entidades
         }
         public string DecimalBinario(double numero)
         {
-            return Convert.ToByte(numero).ToString();
+            int num = (int)Math.Abs(numero);
+            return Convert.ToString(num, 2);
         }
         public string DecimalBinario(string numero)
         {
-            return Convert.ToByte(numero).ToString();
+            int num;
+            if(int.TryParse(numero, out num))
+            {
+                num = (int)Math.Abs(num);
+                return Convert.ToString(num, 2);
+
+            }
+            else
+            {
+                return "Invalido";
+            }
         }
         private bool EsBinario(string numero)
         {
