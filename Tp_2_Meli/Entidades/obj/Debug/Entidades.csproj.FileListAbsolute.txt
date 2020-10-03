@@ -15,3 +15,5 @@ C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\obj\Debug\Entidades.
 C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\obj\Debug\Entidades.dll
 C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\obj\Debug\Entidades.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\bin\Debug\Entidades.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Tp_2_Meli\Entidades\bin\Debug\Entidades.pdb
