@@ -10,22 +10,22 @@ namespace Clases_Instanciables
     public sealed class Profesor : Universitario
     {
         private Queue<Universidad.EClases> clasesDelDia;
-        private Random random;
+        static Random random;
 
-        private Profesor() 
+        static Profesor() 
         {
-            this.random = new Random();
+            random = new Random();
         }
 
-        public Profesor() : this()
+        public Profesor()
         {
-            this.clasesDelDia = new Queue<Universidad.EClases>();
+            
         }
 
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id, nombre, apellido, dni, nacionalidad) 
         {
-            
+            clasesDelDia = new Queue<Universidad.EClases>();
         }
 
         protected override string MostrarDatos()
@@ -64,7 +64,7 @@ namespace Clases_Instanciables
 
         private void _randomClases()
         {
-
+            clasesDelDia.Enqueue(Universidad.EClases[random]);
         }
     }
 }

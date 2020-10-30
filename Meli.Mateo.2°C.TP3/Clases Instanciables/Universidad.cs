@@ -12,5 +12,12 @@ namespace Clases_Instanciables
         {
             Programacion, Laboratorio, Legislacion, SPD
         }
+
+        private List<Alumno> alumnos;
+        private List<Jornada> jornada;
+        private List<Profesor> profesores;
+
+
+
     }
 }
