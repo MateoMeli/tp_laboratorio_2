@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
-    public class Texto : IArchivo<>
+    /*public class Texto : IArchivo<>
     {
 
-    }
+    }*/
 }

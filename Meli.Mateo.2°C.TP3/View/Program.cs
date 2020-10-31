@@ -104,7 +104,7 @@ namespace View
             Console.WriteLine(uni.ToString());
             Console.ReadKey();
             Console.Clear();
-            try
+            /*try
             {
                 Universidad.Guardar(uni);
                 Console.WriteLine("Archivo de Universidad guardado.");
@@ -123,7 +123,7 @@ namespace View
             catch (ArchivosException e)
             {
                 Console.WriteLine(e.Message);
-            }
+            }*/
             Console.ReadKey();
         }
     }

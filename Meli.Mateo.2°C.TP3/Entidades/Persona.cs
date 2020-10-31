@@ -140,7 +140,7 @@ namespace EntidadesAbstractas
                 }
                 else
                 {
-                    throw new NacionalidadInvalidaException("Nacionalidad invalida");
+                    throw new NacionalidadInvalidaException("La nacionalidad no se condice con el numero de  DNI");
                 }
             }
             else

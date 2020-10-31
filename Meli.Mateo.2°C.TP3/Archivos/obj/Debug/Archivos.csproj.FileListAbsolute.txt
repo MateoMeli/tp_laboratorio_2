@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Archivos\obj\Debug\Archivos.pdb
