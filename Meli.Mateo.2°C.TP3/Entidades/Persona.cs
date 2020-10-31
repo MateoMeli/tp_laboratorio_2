@@ -181,7 +181,7 @@ namespace EntidadesAbstractas
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"NOMBRE COMPLETO: {this.Apellido}, {this.Nombre}");
+            sb.Append($"NOMBRE COMPLETO: {this.Apellido}, {this.Nombre}\n");
             sb.AppendLine($"NACIONALIDAD: {this.Nacionalidad}");
             return sb.ToString();
         }

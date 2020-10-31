@@ -78,8 +78,9 @@ namespace Clases_Instanciables
         private string MostrarDatos(Universidad uni)
         {
             StringBuilder sb = new StringBuilder();
-            foreach(Jornada j in this.Jornadas)
+            foreach(Jornada j in uni.Jornadas)
             {
+                sb.AppendLine("JORNADA:");
                 sb.Append(j.ToString());
             }
             return sb.ToString();

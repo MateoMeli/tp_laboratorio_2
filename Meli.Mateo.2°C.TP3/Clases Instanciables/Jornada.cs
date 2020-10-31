@@ -69,7 +69,7 @@ namespace Clases_Instanciables
         public string Leer()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"CLASE DE {this.Clase} {this.Instructor.ToString()}");
+            sb.AppendLine($"CLASE DE {this.Clase} POR {this.Instructor}");
             sb.AppendLine();
             sb.AppendLine("ALUMNOS:");
             foreach (Alumno a in this.Alumnos)
