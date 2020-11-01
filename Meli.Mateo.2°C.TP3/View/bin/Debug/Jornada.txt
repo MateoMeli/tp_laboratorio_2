@@ -3,8 +3,8 @@ NACIONALIDAD: Argentino
 
 LEGAJO: 1
 CLASES DEL DIA:
-Legislacion
 Programacion
+Legislacion
 
 
 
