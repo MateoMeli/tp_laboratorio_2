@@ -7,3 +7,12 @@ C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Clases Abstractas.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Entidades.dll
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\bin\Debug\Excepciones.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\Entidades\obj\Debug\Entidades.pdb

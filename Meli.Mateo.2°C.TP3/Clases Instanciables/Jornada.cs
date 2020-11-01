@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Archivos;
 
 namespace Clases_Instanciables
 {
@@ -61,12 +62,22 @@ namespace Clases_Instanciables
         }
         #endregion
 
-        /*public bool Guardar(Jornada jornada)
+        public static bool Guardar(Jornada jornada)
         {
+            Texto text = new Texto();
+            return text.Guardar("Jornada.txt", jornada.ToString());
 
-        }*/
+        }
 
-        public string Leer()
+        public static string Leer()
+        {
+            string jornada;
+            Texto text = new Texto();
+            text.Leer("Jornada.txt", out jornada);
+            return jornada;
+        }
+
+        public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"CLASE DE {this.Clase} POR {this.Instructor}");
@@ -77,23 +88,12 @@ namespace Clases_Instanciables
                 sb.AppendLine(a.ToString());
             }
             return sb.ToString();
-        
-        }
-
-        public override string ToString()
-        {
-            return this.Leer();
         }
 
 
         public static bool operator ==(Jornada j, Alumno a)
         {
-            foreach (Alumno l in j.Alumnos)
-            {
-                if (l == a)
-                    return true;
-            }
-            return false;
+            return a == j.Clase;
         }
 
         public static bool operator !=(Jornada j, Alumno a)
@@ -103,7 +103,7 @@ namespace Clases_Instanciables
 
         public static Jornada operator +(Jornada j, Alumno a)
         {
-            if(j != a)
+            if(j == a)
             {
                 j.Alumnos.Add(a);
             }

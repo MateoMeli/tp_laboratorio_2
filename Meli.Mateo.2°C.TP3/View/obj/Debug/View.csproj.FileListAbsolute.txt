@@ -14,3 +14,19 @@ C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debu
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.exe
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\View.exe.config
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\View.exe
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\View.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Archivos.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Clases Instanciables.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Entidades.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Excepciones.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Archivos.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Clases Instanciables.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Entidades.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\bin\Debug\Excepciones.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.csprojAssemblyReference.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.exe
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP3\View\obj\Debug\View.pdb

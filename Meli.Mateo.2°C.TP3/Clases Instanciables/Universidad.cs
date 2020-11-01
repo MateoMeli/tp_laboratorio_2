@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Archivos;
 
 using Excepciones;
 
@@ -189,14 +190,18 @@ namespace Clases_Instanciables
             return uni;
         }
 
-        /*public Universidad Leer()
+        public Universidad Leer()
         {
-
+            Xml<Universidad> xml = new Xml<Universidad>();
+            Universidad uni;
+            xml.Leer("Universidad.xml", out uni);
+            return uni;
         }
 
-        public bool Guardar(Universidad uni)
+        public static bool Guardar(Universidad uni)
         {
-
-        }*/
+            Xml<Universidad> xml = new Xml<Universidad>();
+            return xml.Guardar("Universidad.xml", uni);
+        }
     }
 }

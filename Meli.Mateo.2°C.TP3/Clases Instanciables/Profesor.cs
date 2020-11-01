@@ -54,7 +54,7 @@ namespace Clases_Instanciables
             return this.MostrarDatos();
         }
 
-        public static bool operator == (Profesor p, Universidad.EClases clase)
+        public static bool operator ==(Profesor p, Universidad.EClases clase)
         {
             return p.clasesDelDia.Contains(clase);
         }
