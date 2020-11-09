@@ -39,9 +39,8 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("CLIENTE");
             sb.Append(base.ToString());
-            sb.AppendLine($"Producto del rubro: {articulo.Tipo} de precio: ${articulo.Precio}");
+            sb.AppendLine($"Producto: {articulo.Tipo} de precio: ${articulo.Precio}");
             sb.AppendLine($"Abonando con: {this.formaDePago}, abona total de: ${this.Total}");
             return sb.ToString();
         }

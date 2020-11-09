@@ -36,5 +36,14 @@ namespace Entidades
             return sb.ToString();
         }
 
+        public static bool operator == (Farmaceutico f1, Farmaceutico f2)
+        {
+            return f1.Equals(f2) && f1.Matricula == f2.Matricula;
+        }
+
+        public static bool operator !=(Farmaceutico f1, Farmaceutico f2)
+        {
+            return !(f1 == f2);
+        }
     }
 }

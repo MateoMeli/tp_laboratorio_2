@@ -66,12 +66,23 @@ namespace Productos
             }
         }
 
-        public Articulo(TipoProdcto tipoProdcto, float precio, int codigo, string nombre)
+        public Articulo(TipoProdcto tipoProducto, int codigo, string nombre)
         {
             this.Nombre = nombre;
-            this.Tipo = tipoProdcto;
-            this.Precio = precio;
+            this.Tipo = tipoProducto;
             this.Codigo = codigo;
+            switch (tipoProducto)
+            {
+                case TipoProdcto.Analgesico:
+                    this.Precio = 120f;
+                    break;
+                case TipoProdcto.Antibiotico:
+                    this.Precio = 150f;
+                    break;
+                case TipoProdcto.Crema:
+                    this.Precio = 250f;
+                    break;
+            }
         }
     }
 }
