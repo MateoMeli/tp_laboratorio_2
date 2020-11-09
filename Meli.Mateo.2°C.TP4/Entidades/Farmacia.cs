@@ -9,6 +9,7 @@ namespace Entidades
 {
     public class Farmacia
     {
+        public static string NombreFarmacia = "FARMACIA MELI";
         private List<Cliente> clientes;
         private Farmaceutico farmaceutico;
         private List<Articulo> articulos;

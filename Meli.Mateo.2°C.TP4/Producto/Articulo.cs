@@ -8,17 +8,15 @@ namespace Productos
 {
     public class Articulo
     {
-        public enum TipoProdcto
+        public enum TipoProducto
         {
             Antibiotico, Crema, Analgesico
         }
 
-        private TipoProdcto tipo;
+        private TipoProducto tipo;
         private float precio;
-        private string nombre;
-        private int codigo;
 
-        public TipoProdcto Tipo
+        public TipoProducto Tipo
         {
             get
             {
@@ -42,44 +40,19 @@ namespace Productos
             }
         }
         
-        public int Codigo
-        {
-            get
-            {
-                return this.codigo;
-            }
-            set
-            {
-                this.codigo = value;
-            }
-        }
 
-        public string Nombre
+        public Articulo(TipoProducto tipoProducto)
         {
-            get
-            {
-                return this.nombre;
-            }
-            set
-            {
-                this.nombre = value;
-            }
-        }
-
-        public Articulo(TipoProdcto tipoProducto, int codigo, string nombre)
-        {
-            this.Nombre = nombre;
             this.Tipo = tipoProducto;
-            this.Codigo = codigo;
             switch (tipoProducto)
             {
-                case TipoProdcto.Analgesico:
+                case TipoProducto.Analgesico:
                     this.Precio = 120f;
                     break;
-                case TipoProdcto.Antibiotico:
+                case TipoProducto.Antibiotico:
                     this.Precio = 150f;
                     break;
-                case TipoProdcto.Crema:
+                case TipoProducto.Crema:
                     this.Precio = 250f;
                     break;
             }

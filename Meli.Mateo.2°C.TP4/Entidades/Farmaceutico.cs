@@ -30,6 +30,7 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
             sb.AppendLine("FARMACEUTICO");
             sb.Append(base.ToString());
             sb.AppendLine($"MATRICULA: {this.Matricula}");
