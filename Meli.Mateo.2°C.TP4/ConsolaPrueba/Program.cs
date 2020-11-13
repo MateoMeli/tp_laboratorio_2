@@ -20,7 +20,7 @@ namespace ConsolaPrueba
                 Articulo a1 = new Articulo(Articulo.TipoProducto.Analgesico);
                 Articulo a2 = new Articulo(Articulo.TipoProducto.Crema);
                 Cliente c1 = new Cliente("Juli", "Garcia", a1, Cliente.FormaDePago.TarjetaJubilado);
-                Cliente c2 = new Cliente("Mateo", "Meli", a1, Cliente.FormaDePago.Efectivo);
+                Cliente c2 = new Cliente("Mateo", "Meli", a2, Cliente.FormaDePago.Efectivo);
                 farmacia += a1;
                 farmacia += a2;
                 farmacia += c1;

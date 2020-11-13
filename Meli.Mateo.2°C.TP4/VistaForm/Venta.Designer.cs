@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
             this.labelNombre = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
@@ -67,7 +66,6 @@
             resources.ApplyResources(this.labelProducto, "labelProducto");
             this.labelProducto.Name = "labelProducto";
             // 
-            
             // labelPrecio
             // 
             resources.ApplyResources(this.labelPrecio, "labelPrecio");
@@ -101,7 +99,6 @@
             resources.ApplyResources(this.listBoxTipoPago, "listBoxTipoPago");
             this.listBoxTipoPago.Name = "listBoxTipoPago";
             // 
-            
             // richTextBoxVentas
             // 
             this.richTextBoxVentas.BackColor = System.Drawing.SystemColors.ControlText;
