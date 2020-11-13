@@ -35,12 +35,11 @@
             this.labelApellido = new System.Windows.Forms.Label();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.labelProducto = new System.Windows.Forms.Label();
-            this.tipoProdctoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelPrecio = new System.Windows.Forms.Label();
             this.buttonAceptar = new System.Windows.Forms.Button();
             this.listBoxProducto = new System.Windows.Forms.ListBox();
             this.listBoxTipoPago = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tipoProdctoBindingSource)).BeginInit();
+            this.richTextBoxVentas = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // labelNombre
@@ -68,10 +67,7 @@
             resources.ApplyResources(this.labelProducto, "labelProducto");
             this.labelProducto.Name = "labelProducto";
             // 
-            // tipoProdctoBindingSource
-            // 
-            this.tipoProdctoBindingSource.DataSource = typeof(Productos.Articulo.TipoProducto);
-            // 
+            
             // labelPrecio
             // 
             resources.ApplyResources(this.labelPrecio, "labelPrecio");
@@ -86,20 +82,38 @@
             // 
             // listBoxProducto
             // 
-            this.listBoxProducto.FormattingEnabled = true;
             resources.ApplyResources(this.listBoxProducto, "listBoxProducto");
+            this.listBoxProducto.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.listBoxProducto.FormattingEnabled = true;
+            this.listBoxProducto.Items.AddRange(new object[] {
+            resources.GetString("listBoxProducto.Items"),
+            resources.GetString("listBoxProducto.Items1"),
+            resources.GetString("listBoxProducto.Items2")});
             this.listBoxProducto.Name = "listBoxProducto";
             // 
             // listBoxTipoPago
             // 
             this.listBoxTipoPago.FormattingEnabled = true;
+            this.listBoxTipoPago.Items.AddRange(new object[] {
+            resources.GetString("listBoxTipoPago.Items"),
+            resources.GetString("listBoxTipoPago.Items1"),
+            resources.GetString("listBoxTipoPago.Items2")});
             resources.ApplyResources(this.listBoxTipoPago, "listBoxTipoPago");
             this.listBoxTipoPago.Name = "listBoxTipoPago";
+            // 
+            
+            // richTextBoxVentas
+            // 
+            this.richTextBoxVentas.BackColor = System.Drawing.SystemColors.ControlText;
+            this.richTextBoxVentas.ForeColor = System.Drawing.SystemColors.Info;
+            resources.ApplyResources(this.richTextBoxVentas, "richTextBoxVentas");
+            this.richTextBoxVentas.Name = "richTextBoxVentas";
             // 
             // Venta
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.richTextBoxVentas);
             this.Controls.Add(this.listBoxTipoPago);
             this.Controls.Add(this.listBoxProducto);
             this.Controls.Add(this.buttonAceptar);
@@ -112,7 +126,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Venta";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.tipoProdctoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +143,7 @@
         private System.Windows.Forms.Button buttonAceptar;
         private System.Windows.Forms.ListBox listBoxProducto;
         private System.Windows.Forms.ListBox listBoxTipoPago;
+        private System.Windows.Forms.BindingSource formaDePagoBindingSource;
+        private System.Windows.Forms.RichTextBox richTextBoxVentas;
     }
 }

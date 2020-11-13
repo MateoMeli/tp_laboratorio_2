@@ -17,9 +17,5 @@ namespace VistaForm
             InitializeComponent();
         }
 
-        private void asd(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -40,22 +40,52 @@ namespace VistaForm
         {
             get
             {
-                return new Articulo((Articulo.TipoProducto)this.listBoxProducto.SelectedItem);
+                Articulo nuevo = null;
+                switch (this.listBoxProducto.SelectedItem.ToString())
+                {
+                    case "Analgesico":
+                        nuevo = new Articulo(Articulo.TipoProducto.Analgesico);
+                        break;
+                    case "Crema":
+                        nuevo = new Articulo(Articulo.TipoProducto.Crema);
+                        break;
+                    case "Antibiotico":
+                        nuevo = new Articulo(Articulo.TipoProducto.Antibiotico);
+                        break;
+                }
+                return nuevo;
             }
         }
         public Cliente.FormaDePago Forma
         {
             get
             {
-                return (Cliente.FormaDePago)this.listBoxTipoPago.SelectedItem;
+                switch (this.listBoxTipoPago.SelectedItem.ToString())
+                {
+                    case "Tarjeta":
+                        return Cliente.FormaDePago.Tarjeta;
+                    case "TarjetaJubilado":
+                        return Cliente.FormaDePago.TarjetaJubilado;
+                    case "Efectivo":
+                        return Cliente.FormaDePago.Efectivo;
+                }
+                return Cliente.FormaDePago.Efectivo;
             }
         }
 
 
         private void btnAceptar_OnClick(object sender, EventArgs e)
         {
-            articulo = Producto;
-            cliente = new Cliente(Nombre, Apellido, articulo, Forma);
+            try
+            {
+                articulo = Producto;
+                cliente = new Cliente(Nombre, Apellido, articulo, Forma);
+                this.richTextBoxVentas.Text = cliente.ToString();
+            }
+            catch (DatoInvalidoException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             
         }
     }

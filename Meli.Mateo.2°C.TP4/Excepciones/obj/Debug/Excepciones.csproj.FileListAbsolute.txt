@@ -4,3 +4,9 @@ C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\o
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Lenovo\Desktop\Mateo\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\RYZEN\Desktop\tp_laboratorio_2\Meli.Mateo.2°C.TP4\Excepciones\obj\Debug\Excepciones.pdb

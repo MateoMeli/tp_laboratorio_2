@@ -84,6 +84,7 @@
     <EmbeddedResource Include="Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Entidades.Cliente+FormaDePago.datasource" />
     <None Include="Properties\DataSources\Productos.Articulo+TipoProdcto.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +100,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsolaPrueba\ConsolaPrueba.csproj">
+      <Project>{02c9b5bb-b137-4310-a36f-1d3c0501449f}</Project>
+      <Name>ConsolaPrueba</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{de62da06-180d-4490-9216-af5d95bd51a8}</Project>
       <Name>Entidades</Name>
