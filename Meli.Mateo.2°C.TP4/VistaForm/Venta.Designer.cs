@@ -76,7 +76,7 @@
             resources.ApplyResources(this.buttonAceptar, "buttonAceptar");
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
-            this.buttonAceptar.Click += new System.EventHandler(this.btnAceptar_OnClick);
+            this.buttonAceptar.Click += new System.EventHandler(this.BtnAceptar_OnClick);
             // 
             // listBoxProducto
             // 
@@ -135,12 +135,10 @@
         private System.Windows.Forms.Label labelApellido;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.Label labelProducto;
-        private System.Windows.Forms.BindingSource tipoProdctoBindingSource;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Button buttonAceptar;
         private System.Windows.Forms.ListBox listBoxProducto;
         private System.Windows.Forms.ListBox listBoxTipoPago;
-        private System.Windows.Forms.BindingSource formaDePagoBindingSource;
         private System.Windows.Forms.RichTextBox richTextBoxVentas;
     }
 }

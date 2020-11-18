@@ -39,42 +39,48 @@ namespace VistaForm
         public Articulo Producto
         {
             get
-            {
-                Articulo nuevo = null;
-                switch (this.listBoxProducto.SelectedItem.ToString())
+            { 
+                if(this.listBoxProducto != null)
                 {
-                    case "Analgesico":
-                        nuevo = new Articulo(Articulo.TipoProducto.Analgesico);
-                        break;
-                    case "Crema":
-                        nuevo = new Articulo(Articulo.TipoProducto.Crema);
-                        break;
-                    case "Antibiotico":
-                        nuevo = new Articulo(Articulo.TipoProducto.Antibiotico);
-                        break;
+                    switch (this.listBoxProducto.SelectedIndex)
+                    {
+                        case 0:
+                            return new Articulo(Articulo.TipoProducto.Antibiotico);
+                        case 1:
+                            return new Articulo(Articulo.TipoProducto.Analgesico);
+                        case 2:
+                            return new Articulo(Articulo.TipoProducto.Crema);
+                    }
                 }
-                return nuevo;
+                throw new FormVentaException("Debe seleccionar el tipo de producto");
+                
+                
+                
             }
         }
         public Cliente.FormaDePago Forma
         {
             get
             {
-                switch (this.listBoxTipoPago.SelectedItem.ToString())
+                if(this.listBoxTipoPago != null)
                 {
-                    case "Tarjeta":
-                        return Cliente.FormaDePago.Tarjeta;
-                    case "TarjetaJubilado":
-                        return Cliente.FormaDePago.TarjetaJubilado;
-                    case "Efectivo":
-                        return Cliente.FormaDePago.Efectivo;
+                    switch (this.listBoxTipoPago.SelectedIndex)
+                    {
+                        case 0:
+                            return Cliente.FormaDePago.Tarjeta;
+                        case 1:
+                            return Cliente.FormaDePago.TarjetaJubilado;
+                        case 2:
+                            return Cliente.FormaDePago.Efectivo;
+                    }
                 }
-                return Cliente.FormaDePago.Efectivo;
+                throw new FormVentaException("Debe seleccionar la forma de pago");
+
             }
         }
 
 
-        private void btnAceptar_OnClick(object sender, EventArgs e)
+        private void BtnAceptar_OnClick(object sender, EventArgs e)
         {
             try
             {
@@ -83,6 +89,10 @@ namespace VistaForm
                 this.richTextBoxVentas.Text = cliente.ToString();
             }
             catch (DatoInvalidoException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (FormVentaException ex)
             {
                 MessageBox.Show(ex.Message);
             }
