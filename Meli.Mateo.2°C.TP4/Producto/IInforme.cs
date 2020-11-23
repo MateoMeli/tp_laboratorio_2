@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Producto
 {
-    public interface IInforme
+    public interface IInforme<Farmacia>
     {
+
     }
 }

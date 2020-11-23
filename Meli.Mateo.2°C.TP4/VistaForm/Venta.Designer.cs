@@ -112,7 +112,7 @@
             resources.ApplyResources(this.btnTicket, "btnTicket");
             this.btnTicket.Name = "btnTicket";
             this.btnTicket.UseVisualStyleBackColor = true;
-            this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
+            this.btnTicket.Click += new System.EventHandler(this.BtnTicket_Click);
             // 
             // Venta
             // 

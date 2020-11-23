@@ -105,7 +105,7 @@ namespace VistaForm
             
         }
 
-        private void btnTicket_Click(object sender, EventArgs e)
+        private void BtnTicket_Click(object sender, EventArgs e)
         {
             StreamWriter streamWriter = null;
             
