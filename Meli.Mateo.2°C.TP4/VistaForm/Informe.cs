@@ -12,10 +12,12 @@ namespace VistaForm
 {
     public partial class Informe : Form
     {
+
         public Informe()
         {
             InitializeComponent();
         }
+
 
     }
 }

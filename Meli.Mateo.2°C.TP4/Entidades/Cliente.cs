@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Productos;
+using Excepciones;
 
 namespace Entidades
 {
@@ -12,9 +13,18 @@ namespace Entidades
         private Articulo articulo;
         private FormaDePago formaDePago;
         private float totalAbonar;
+        private DateTime fechaYHora;
         public enum FormaDePago
         {
             Tarjeta, Efectivo, TarjetaJubilado
+        }
+
+        public DateTime FechaYHora
+        {
+            get
+            {
+                return DateTime.Now;
+            }
         }
 
         public float Total
@@ -31,9 +41,17 @@ namespace Entidades
 
         public Cliente(string nombre, string apellido, Articulo articulo, FormaDePago forma) : base(nombre, apellido)
         {
-            this.articulo = articulo;
-            this.formaDePago = forma;
-            this.Total = articulo.Precio;
+            try
+            {
+                this.articulo = articulo;
+                this.formaDePago = forma;
+                this.fechaYHora = FechaYHora;
+                this.Total = articulo.Precio;
+            }
+            catch (Exception)
+            {
+                throw new TicketException("Complete todos los datos");
+            }
         }
 
         public override string ToString()
@@ -42,6 +60,7 @@ namespace Entidades
             sb.Append(base.ToString());
             sb.AppendLine($"Producto: {articulo.Tipo} de precio: ${articulo.Precio}");
             sb.AppendLine($"Abonando con: {this.formaDePago}, abona total de: ${this.Total}");
+            sb.AppendLine($"FECHA DE VENTA {this.fechaYHora}");
             return sb.ToString();
         }
 

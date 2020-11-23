@@ -10,6 +10,7 @@ using Entidades;
 using System.Windows.Forms;
 using Productos;
 using Excepciones;
+using System.IO;
 
 namespace VistaForm
 {
@@ -87,6 +88,7 @@ namespace VistaForm
                 articulo = Producto;
                 cliente = new Cliente(Nombre, Apellido, articulo, Forma);
                 this.richTextBoxVentas.Text = cliente.ToString();
+                this.btnTicket.Visible = true;
             }
             catch (DatoInvalidoException ex)
             {
@@ -95,8 +97,35 @@ namespace VistaForm
             catch (FormVentaException ex)
             {
                 MessageBox.Show(ex.Message);
+
+            }catch (TicketException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private void btnTicket_Click(object sender, EventArgs e)
+        {
+            StreamWriter streamWriter = null;
+            
+            try
+            {
+                if(this.cliente != null)
+                {
+                    string rutaCompletarda = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    string rutaCompleta = rutaCompletarda + @"\" + "Ticket.txt";
+                    streamWriter = new StreamWriter(rutaCompleta, false);
+                    streamWriter.WriteLine(cliente.ToString());
+                }
+            }
+            finally
+            {
+                if (streamWriter != null)
+                    streamWriter.Close();
             }
             
         }
     }
+    
 }

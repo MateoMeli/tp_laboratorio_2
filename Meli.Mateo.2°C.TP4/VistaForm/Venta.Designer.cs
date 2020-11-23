@@ -39,6 +39,7 @@
             this.listBoxProducto = new System.Windows.Forms.ListBox();
             this.listBoxTipoPago = new System.Windows.Forms.ListBox();
             this.richTextBoxVentas = new System.Windows.Forms.RichTextBox();
+            this.btnTicket = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNombre
@@ -106,10 +107,18 @@
             resources.ApplyResources(this.richTextBoxVentas, "richTextBoxVentas");
             this.richTextBoxVentas.Name = "richTextBoxVentas";
             // 
+            // btnTicket
+            // 
+            resources.ApplyResources(this.btnTicket, "btnTicket");
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.UseVisualStyleBackColor = true;
+            this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
+            // 
             // Venta
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnTicket);
             this.Controls.Add(this.richTextBoxVentas);
             this.Controls.Add(this.listBoxTipoPago);
             this.Controls.Add(this.listBoxProducto);
@@ -140,5 +149,6 @@
         private System.Windows.Forms.ListBox listBoxProducto;
         private System.Windows.Forms.ListBox listBoxTipoPago;
         private System.Windows.Forms.RichTextBox richTextBoxVentas;
+        private System.Windows.Forms.Button btnTicket;
     }
 }
