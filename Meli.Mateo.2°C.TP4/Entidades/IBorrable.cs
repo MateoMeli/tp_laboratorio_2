@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Producto
+namespace Entidades
 {
-    public class InformeDiario
+    public interface IBorrable<Cliente>
     {
-
+        bool Borrar();
     }
 }

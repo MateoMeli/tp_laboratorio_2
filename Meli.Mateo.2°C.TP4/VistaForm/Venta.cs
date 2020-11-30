@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using Entidades;
 using System.Windows.Forms;
 using Productos;
@@ -18,9 +19,11 @@ namespace VistaForm
     {
         private Cliente cliente;
         private Articulo articulo;
+        private Informe informe;
         public Venta()
         {
             InitializeComponent();
+            this.informe = new Informe();
         }
 
         public string Nombre
@@ -80,6 +83,13 @@ namespace VistaForm
             }
         }
 
+        public Cliente Persona
+        {
+            get
+            {
+                return this.cliente;
+            }
+        }
 
         private void BtnAceptar_OnClick(object sender, EventArgs e)
         {
@@ -88,7 +98,11 @@ namespace VistaForm
                 articulo = Producto;
                 cliente = new Cliente(Nombre, Apellido, articulo, Forma);
                 this.richTextBoxVentas.Text = cliente.ToString();
-                this.btnTicket.Visible = true;
+                informe.Agregar(cliente);
+                if(cliente is Cliente)
+                {
+                    btnTicket.Visible = true;
+                }
             }
             catch (DatoInvalidoException ex)
             {
@@ -113,19 +127,29 @@ namespace VistaForm
             {
                 if(this.cliente != null)
                 {
-                    string rutaCompletarda = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                    string rutaCompleta = rutaCompletarda + @"\" + "Ticket.txt";
+                    string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    string rutaCompleta = ruta + @"\" + "Ticket" + $"{Apellido}" + ".txt";
                     streamWriter = new StreamWriter(rutaCompleta, false);
                     streamWriter.WriteLine(cliente.ToString());
+                    MessageBox.Show("Ticket escrito con exito");
                 }
             }
             finally
             {
                 if (streamWriter != null)
+                {
                     streamWriter.Close();
+                }
             }
             
         }
+
+        private void btnInforme_Click(object sender, EventArgs e)
+        {
+            informe.RTB.Text = informe.Imprimir();
+            this.informe.ShowDialog();
+        }
+        
     }
     
 }

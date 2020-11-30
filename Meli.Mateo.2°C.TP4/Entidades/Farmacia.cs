@@ -7,7 +7,7 @@ using Productos;
 
 namespace Entidades
 {
-    public class Farmacia
+    public class Farmacia : IBorrable<Cliente>
     {
         public static string NombreFarmacia = "FARMACIA MELI";
         private List<Cliente> clientes;
@@ -107,6 +107,16 @@ namespace Entidades
                 sb.AppendLine(c.ToString());
             }
             return sb.ToString();
+        }
+
+        public bool Borrar()
+        {
+            if (clientes != null)
+            {
+                this.Clientes.Clear();
+                return true;
+            }
+            return false;
         }
     }
 }

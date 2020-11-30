@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Entidades;
 using Excepciones;
@@ -26,6 +27,8 @@ namespace ConsolaPrueba
                 farmacia += c1;
                 farmacia += c2;
                 Console.WriteLine(farmacia.ToString());
+                Thread.Sleep(2000);
+                farmacia.Borrar();
             }
             catch (Exception)
             {

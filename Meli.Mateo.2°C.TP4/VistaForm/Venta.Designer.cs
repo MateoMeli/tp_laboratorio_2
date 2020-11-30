@@ -40,6 +40,7 @@
             this.listBoxTipoPago = new System.Windows.Forms.ListBox();
             this.richTextBoxVentas = new System.Windows.Forms.RichTextBox();
             this.btnTicket = new System.Windows.Forms.Button();
+            this.btnInforme = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNombre
@@ -82,7 +83,7 @@
             // listBoxProducto
             // 
             resources.ApplyResources(this.listBoxProducto, "listBoxProducto");
-            this.listBoxProducto.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.listBoxProducto.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listBoxProducto.FormattingEnabled = true;
             this.listBoxProducto.Items.AddRange(new object[] {
             resources.GetString("listBoxProducto.Items"),
@@ -92,20 +93,21 @@
             // 
             // listBoxTipoPago
             // 
+            resources.ApplyResources(this.listBoxTipoPago, "listBoxTipoPago");
             this.listBoxTipoPago.FormattingEnabled = true;
             this.listBoxTipoPago.Items.AddRange(new object[] {
             resources.GetString("listBoxTipoPago.Items"),
             resources.GetString("listBoxTipoPago.Items1"),
             resources.GetString("listBoxTipoPago.Items2")});
-            resources.ApplyResources(this.listBoxTipoPago, "listBoxTipoPago");
             this.listBoxTipoPago.Name = "listBoxTipoPago";
             // 
             // richTextBoxVentas
             // 
             this.richTextBoxVentas.BackColor = System.Drawing.SystemColors.ControlText;
-            this.richTextBoxVentas.ForeColor = System.Drawing.SystemColors.Info;
             resources.ApplyResources(this.richTextBoxVentas, "richTextBoxVentas");
+            this.richTextBoxVentas.ForeColor = System.Drawing.SystemColors.Info;
             this.richTextBoxVentas.Name = "richTextBoxVentas";
+            this.richTextBoxVentas.ReadOnly = true;
             // 
             // btnTicket
             // 
@@ -114,10 +116,19 @@
             this.btnTicket.UseVisualStyleBackColor = true;
             this.btnTicket.Click += new System.EventHandler(this.BtnTicket_Click);
             // 
+            // btnInforme
+            // 
+            resources.ApplyResources(this.btnInforme, "btnInforme");
+            this.btnInforme.Name = "btnInforme";
+            this.btnInforme.UseVisualStyleBackColor = true;
+            this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
+            // 
             // Venta
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.Controls.Add(this.btnInforme);
             this.Controls.Add(this.btnTicket);
             this.Controls.Add(this.richTextBoxVentas);
             this.Controls.Add(this.listBoxTipoPago);
@@ -131,7 +142,6 @@
             this.Controls.Add(this.labelNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Venta";
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +160,6 @@
         private System.Windows.Forms.ListBox listBoxTipoPago;
         private System.Windows.Forms.RichTextBox richTextBoxVentas;
         private System.Windows.Forms.Button btnTicket;
+        private System.Windows.Forms.Button btnInforme;
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Entidades;
 using Productos;
 using Excepciones;
+using System.Threading;
 
 namespace VistaForm
 {
@@ -22,7 +23,7 @@ namespace VistaForm
         public FarmaciaElPepe()
         {
             InitializeComponent();
-            Farmaceutico farmaceutico = new Farmaceutico("Candela", "Garcia", 169882);
+            Farmaceutico farmaceutico = new Farmaceutico("Meli", "Mateo", 169882);
             Farmacia f1 = new Farmacia(farmaceutico);
             this.farmacia = f1;
             this.textBoxPresentacion.Text = $"{Farmacia.NombreFarmacia} {this.farmacia.Farmaceutico.ToString()}";
@@ -41,5 +42,6 @@ namespace VistaForm
             if(mensaje == DialogResult.Yes)
                 Close();
         }
+
     }
 }

@@ -57,5 +57,20 @@ namespace Productos
                     break;
             }
         }
+
+        public override string ToString()
+        {
+            switch (this.tipo)
+            {
+                case TipoProducto.Analgesico:
+                    return "Analgesico";
+                case TipoProducto.Antibiotico:
+                    return "Antibiotico";
+                case TipoProducto.Crema:
+                    return "Crema";
+                default:
+                    return null;
+            }
+        }
     }
 }

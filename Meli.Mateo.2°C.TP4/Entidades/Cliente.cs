@@ -10,6 +10,7 @@ namespace Entidades
 {
     public class Cliente : Persona
     {
+
         private Articulo articulo;
         private FormaDePago formaDePago;
         private float totalAbonar;
@@ -23,7 +24,19 @@ namespace Entidades
         {
             get
             {
-                return DateTime.Now;
+                return DateTime.Today;
+            }
+            set
+            {
+                fechaYHora = value;
+            }
+        }
+
+        public DateTime LaFecha
+        {
+            get
+            {
+                return fechaYHora;
             }
         }
 
@@ -36,6 +49,22 @@ namespace Entidades
             set
             {
                 this.totalAbonar = PrecioFinal(value, formaDePago);
+            }
+        }
+
+        public Articulo Producto
+        {
+            get
+            {
+                return this.articulo;
+            }
+        }
+
+        public FormaDePago Forma
+        {
+            get
+            {
+                return this.formaDePago;
             }
         }
 
@@ -54,13 +83,18 @@ namespace Entidades
             }
         }
 
+        public Cliente(string nombre, string apellido, Articulo articulo, FormaDePago forma, DateTime fecha) : this(nombre, apellido, articulo, forma)
+        {
+            this.FechaYHora = fecha;
+        }
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.ToString());
             sb.AppendLine($"Producto: {articulo.Tipo} de precio: ${articulo.Precio}");
             sb.AppendLine($"Abonando con: {this.formaDePago}, abona total de: ${this.Total}");
-            sb.AppendLine($"FECHA DE VENTA {this.fechaYHora}");
+            sb.AppendLine($"FECHA DE VENTA {this.fechaYHora.Date}");
             return sb.ToString();
         }
 
@@ -82,5 +116,6 @@ namespace Entidades
             }
             return precioFinal;
         }
+
     }
 }

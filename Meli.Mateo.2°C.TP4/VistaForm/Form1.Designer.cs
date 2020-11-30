@@ -40,20 +40,21 @@
             this.textBoxPresentacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPresentacion.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBoxPresentacion.Enabled = false;
-            this.textBoxPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPresentacion.Location = new System.Drawing.Point(159, 32);
+            this.textBoxPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPresentacion.Location = new System.Drawing.Point(288, 31);
             this.textBoxPresentacion.Multiline = true;
             this.textBoxPresentacion.Name = "textBoxPresentacion";
             this.textBoxPresentacion.ReadOnly = true;
-            this.textBoxPresentacion.Size = new System.Drawing.Size(494, 94);
+            this.textBoxPresentacion.Size = new System.Drawing.Size(689, 185);
             this.textBoxPresentacion.TabIndex = 0;
             this.textBoxPresentacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonIngresar
             // 
-            this.buttonIngresar.Location = new System.Drawing.Point(250, 250);
+            this.buttonIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIngresar.Location = new System.Drawing.Point(414, 295);
             this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(286, 95);
+            this.buttonIngresar.Size = new System.Drawing.Size(478, 141);
             this.buttonIngresar.TabIndex = 1;
             this.buttonIngresar.Text = "Ingresar";
             this.buttonIngresar.UseVisualStyleBackColor = true;
@@ -61,9 +62,10 @@
             // 
             // buttonCerrar
             // 
-            this.buttonCerrar.Location = new System.Drawing.Point(250, 377);
+            this.buttonCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCerrar.Location = new System.Drawing.Point(414, 466);
             this.buttonCerrar.Name = "buttonCerrar";
-            this.buttonCerrar.Size = new System.Drawing.Size(286, 23);
+            this.buttonCerrar.Size = new System.Drawing.Size(478, 118);
             this.buttonCerrar.TabIndex = 2;
             this.buttonCerrar.Text = "Cerrar";
             this.buttonCerrar.UseVisualStyleBackColor = true;
@@ -74,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1232, 626);
             this.Controls.Add(this.buttonCerrar);
             this.Controls.Add(this.buttonIngresar);
             this.Controls.Add(this.textBoxPresentacion);
