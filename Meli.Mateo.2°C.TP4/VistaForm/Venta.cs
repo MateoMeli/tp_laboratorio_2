@@ -20,9 +20,17 @@ namespace VistaForm
         private Cliente cliente;
         private Articulo articulo;
         private Informe informe;
-        public Venta()
+        private Farmacia farmacia;
+        private InformeDAO informeDao;
+        public Venta(Farmacia f)
         {
             InitializeComponent();
+            farmacia = f;
+            informeDao = new InformeDAO();
+            if(farmacia.Clientes.Count < 1)
+            {
+                Thread t = new Thread(this.farmacia.Clientes = informeDao.ListarProductos);
+            }
             this.informe = new Informe();
         }
 
@@ -98,6 +106,7 @@ namespace VistaForm
                 articulo = Producto;
                 cliente = new Cliente(Nombre, Apellido, articulo, Forma);
                 this.richTextBoxVentas.Text = cliente.ToString();
+                farmacia += cliente;
                 informe.Agregar(cliente);
                 if(cliente is Cliente)
                 {

@@ -31,7 +31,7 @@ namespace VistaForm
 
         private void btnIngresar_OnClick(object sender, EventArgs e)
         {
-            this.venta = new Venta();
+            this.venta = new Venta(this.farmacia);
             this.venta.ShowDialog();
         }
 

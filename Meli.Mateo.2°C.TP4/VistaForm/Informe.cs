@@ -65,6 +65,7 @@ namespace VistaForm
         private void btnLeer_Click(object sender, EventArgs e)
         {
             this.clientes = informeDao.ListarProductos();
+            this.rtbInforme.Text =  Imprimir();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
