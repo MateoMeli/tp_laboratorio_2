@@ -17,7 +17,7 @@ namespace VistaForm
     public partial class FarmaciaElPepe : Form
     {
         private Farmacia farmacia;
-        private Venta venta;
+        private VentaForm venta;
 
 
         public FarmaciaElPepe()
@@ -29,9 +29,10 @@ namespace VistaForm
             this.textBoxPresentacion.Text = $"{Farmacia.NombreFarmacia} {this.farmacia.Farmaceutico.ToString()}";
         }
 
+
         private void btnIngresar_OnClick(object sender, EventArgs e)
         {
-            this.venta = new Venta(this.farmacia);
+            this.venta = new VentaForm(this.farmacia);
             this.venta.ShowDialog();
         }
 
@@ -42,6 +43,5 @@ namespace VistaForm
             if(mensaje == DialogResult.Yes)
                 Close();
         }
-
     }
 }

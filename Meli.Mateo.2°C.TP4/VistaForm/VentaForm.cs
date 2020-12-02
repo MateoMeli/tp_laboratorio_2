@@ -15,25 +15,21 @@ using System.IO;
 
 namespace VistaForm
 {
-    public partial class Venta : Form
+    public partial class VentaForm : Form
     {
         private Cliente cliente;
         private Articulo articulo;
-        private Informe informe;
+        private InformeForm informe;
+        private Thread t;
         private Farmacia farmacia;
         private InformeDAO informeDao;
-        public Venta(Farmacia f)
+        public VentaForm(Farmacia f)
         {
             InitializeComponent();
             farmacia = f;
             informeDao = new InformeDAO();
-            if(farmacia.Clientes.Count < 1)
-            {
-                Thread t = new Thread(this.farmacia.Clientes = informeDao.ListarProductos);
-            }
-            this.informe = new Informe();
+            this.informe = new InformeForm();
         }
-
         public string Nombre
         {
             get
@@ -107,6 +103,8 @@ namespace VistaForm
                 cliente = new Cliente(Nombre, Apellido, articulo, Forma);
                 this.richTextBoxVentas.Text = cliente.ToString();
                 farmacia += cliente;
+                t = new Thread(new ParameterizedThreadStart(informeDao.InsertarUnProducto));
+                t.Start(cliente);
                 informe.Agregar(cliente);
                 if(cliente is Cliente)
                 {
@@ -150,7 +148,6 @@ namespace VistaForm
                     streamWriter.Close();
                 }
             }
-            
         }
 
         private void btnInforme_Click(object sender, EventArgs e)
@@ -158,7 +155,14 @@ namespace VistaForm
             informe.RTB.Text = informe.Imprimir();
             this.informe.ShowDialog();
         }
-        
+
+        private void Venta_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (t != null || t.IsAlive)
+            {
+                t.Abort();
+            }
+        }
     }
     
 }

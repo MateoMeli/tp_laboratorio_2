@@ -13,12 +13,12 @@ namespace VistaForm
 {
 
     public delegate void Informar(Cliente c);
-    public partial class Informe : Form
+    public partial class InformeForm : Form
     {
         public event Informar Añadir;
         private List<Cliente> clientes;
         private InformeDAO informeDao;
-        public Informe()
+        public InformeForm()
         {
             InitializeComponent();
             informeDao = new InformeDAO();

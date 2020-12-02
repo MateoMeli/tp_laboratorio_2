@@ -22,8 +22,6 @@ namespace ConsolaPrueba
                 Articulo a2 = new Articulo(Articulo.TipoProducto.Crema);
                 Cliente c1 = new Cliente("Juli", "Garcia", a1, Cliente.FormaDePago.TarjetaJubilado);
                 Cliente c2 = new Cliente("Mateo", "Meli", a2, Cliente.FormaDePago.Efectivo);
-                farmacia += a1;
-                farmacia += a2;
                 farmacia += c1;
                 farmacia += c2;
                 Console.WriteLine(farmacia.ToString());

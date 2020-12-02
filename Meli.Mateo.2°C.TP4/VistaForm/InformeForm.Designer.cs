@@ -1,6 +1,6 @@
 ﻿namespace VistaForm
 {
-    partial class Informe
+    partial class InformeForm
     {
         /// <summary>
         /// Required designer variable.

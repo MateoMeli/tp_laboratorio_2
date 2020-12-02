@@ -8,6 +8,9 @@ namespace Entidades
 {
     public static class Extension
     {
-
+        public static int PruebaExtension(this string a, string b)
+        {
+            return 0;
+        }
     }
 }

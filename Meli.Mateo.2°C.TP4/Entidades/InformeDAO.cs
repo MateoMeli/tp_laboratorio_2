@@ -20,6 +20,34 @@ namespace Entidades
             this.sqlConnection = new SqlConnection(connectionString);
         }
 
+        public void InsertarUnProducto(object clientes)
+        {
+            Cliente cli = (Cliente)clientes;
+            try
+            {
+                    string command = "INSERT INTO INFORME(nombre, apellido, articulo, formaDePago, precioAPagar, fecha) " +
+                    "VALUES(@nombre, @apellido, @articulo, @formaDePago, @precioAPagar, @fecha)";
+                    SqlCommand sqlCommand = new SqlCommand(command, this.sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("nombre", cli.Nombre);
+                    sqlCommand.Parameters.AddWithValue("apellido", cli.Apellido);
+                    sqlCommand.Parameters.AddWithValue("articulo", cli.Producto.ToString());
+                    sqlCommand.Parameters.AddWithValue("formaDePago", cli.Forma.ToString());
+                    sqlCommand.Parameters.AddWithValue("precioAPagar", cli.Total);
+                    sqlCommand.Parameters.AddWithValue("fecha", cli.LaFecha);
+
+                    this.sqlConnection.Open();
+                    sqlCommand.ExecuteNonQuery();
+
+                
+            }
+            finally
+            {
+                if (sqlConnection != null &&
+                    sqlConnection.State == System.Data.ConnectionState.Open)
+                    sqlConnection.Close();
+            }
+        }
+
         public void InsertarProducto(List<Cliente> clientes)
         {
             try

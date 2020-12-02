@@ -46,31 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="IngresoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="IngresoForm.Designer.cs">
+      <DependentUpon>IngresoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Informe.cs">
+    <Compile Include="InformeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Informe.Designer.cs">
-      <DependentUpon>Informe.cs</DependentUpon>
+    <Compile Include="InformeForm.Designer.cs">
+      <DependentUpon>InformeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Venta.cs">
+    <Compile Include="VentaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Venta.Designer.cs">
-      <DependentUpon>Venta.cs</DependentUpon>
+    <Compile Include="VentaForm.Designer.cs">
+      <DependentUpon>VentaForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="IngresoForm.resx">
+      <DependentUpon>IngresoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informe.resx">
-      <DependentUpon>Informe.cs</DependentUpon>
+    <EmbeddedResource Include="InformeForm.resx">
+      <DependentUpon>InformeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,8 +81,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Venta.resx">
-      <DependentUpon>Venta.cs</DependentUpon>
+    <EmbeddedResource Include="VentaForm.resx">
+      <DependentUpon>VentaForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Entidades.Cliente+FormaDePago.datasource" />
     <None Include="Properties\DataSources\Productos.Articulo+TipoProdcto.datasource" />

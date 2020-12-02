@@ -1,6 +1,6 @@
 ﻿namespace VistaForm
 {
-    partial class Venta
+    partial class VentaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentaForm));
             this.labelNombre = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.labelApellido = new System.Windows.Forms.Label();
@@ -142,6 +142,7 @@
             this.Controls.Add(this.labelNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Venta";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Venta_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
