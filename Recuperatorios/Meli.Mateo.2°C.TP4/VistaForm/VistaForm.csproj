@@ -100,9 +100,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsolaPrueba\Test.csproj">
+    <ProjectReference Include="..\ConsolaPrueba\TestConsola.csproj">
       <Project>{02c9b5bb-b137-4310-a36f-1d3c0501449f}</Project>
-      <Name>Test</Name>
+      <Name>TestConsola</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{de62da06-180d-4490-9216-af5d95bd51a8}</Project>

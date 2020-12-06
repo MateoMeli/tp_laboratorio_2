@@ -8,7 +8,7 @@ using Entidades;
 using Excepciones;
 using Productos;
 
-namespace ConsolaPrueba
+namespace Test
 {
     class Program
     {

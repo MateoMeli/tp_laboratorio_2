@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Productos", "Producto\Productos.csproj", "{48B032C8-A363-422E-A5B7-4A81799BBAFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "ConsolaPrueba\Test.csproj", "{02C9B5BB-B137-4310-A36F-1D3C0501449F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsola", "ConsolaPrueba\TestConsola.csproj", "{02C9B5BB-B137-4310-A36F-1D3C0501449F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3839DF8-BB91-404E-8553-9E1561C2693F}"
 	ProjectSection(SolutionItems) = preProject

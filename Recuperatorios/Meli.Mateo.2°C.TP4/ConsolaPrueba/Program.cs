@@ -8,7 +8,7 @@ using Entidades;
 using Excepciones;
 using Productos;
 
-namespace ConsolaPrueba
+namespace Test
 {
     class Program
     {
@@ -25,7 +25,7 @@ namespace ConsolaPrueba
                 farmacia += c1;
                 farmacia += c2;
                 Console.WriteLine(farmacia.ToString());
-                Thread.Sleep(2000);
+                //las demas funcionalidades se encuentran en los formularios
             }
             catch (Exception)
             {
