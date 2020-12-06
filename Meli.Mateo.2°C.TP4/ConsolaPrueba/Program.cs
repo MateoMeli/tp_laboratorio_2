@@ -26,7 +26,6 @@ namespace ConsolaPrueba
                 farmacia += c2;
                 Console.WriteLine(farmacia.ToString());
                 Thread.Sleep(2000);
-                farmacia.Borrar();
             }
             catch (Exception)
             {

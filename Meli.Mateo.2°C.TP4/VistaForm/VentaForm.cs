@@ -150,7 +150,7 @@ namespace VistaForm
             }
         }
 
-        private void btnInforme_Click(object sender, EventArgs e)
+        private void BtnInforme_Click(object sender, EventArgs e)
         {
             informe.RTB.Text = informe.Imprimir();
             this.informe.ShowDialog();

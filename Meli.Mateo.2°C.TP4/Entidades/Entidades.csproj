@@ -45,7 +45,6 @@
     <Compile Include="Extension.cs" />
     <Compile Include="Farmaceutico.cs" />
     <Compile Include="Farmacia.cs" />
-    <Compile Include="IBorrable.cs" />
     <Compile Include="InformeDAO.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

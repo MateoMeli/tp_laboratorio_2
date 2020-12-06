@@ -16,9 +16,11 @@ namespace TestUnitarios
         }
 
         [TestMethod]
-        public void TEsteadm()
+        public void TstExtension()
         {
-
+            Cliente c = new Cliente("Mateo", "Perez", new Productos.Articulo(Productos.Articulo.TipoProducto.Analgesico), Cliente.FormaDePago.Efectivo);
+            string a = c.PrimeraLetraNombre();
+            Assert.IsTrue(a == "o");
         }
     }
 }

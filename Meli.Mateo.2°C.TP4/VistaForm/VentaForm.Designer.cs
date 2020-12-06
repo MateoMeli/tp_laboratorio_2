@@ -121,7 +121,7 @@
             resources.ApplyResources(this.btnInforme, "btnInforme");
             this.btnInforme.Name = "btnInforme";
             this.btnInforme.UseVisualStyleBackColor = true;
-            this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
+            this.btnInforme.Click += new System.EventHandler(this.BtnInforme_Click);
             // 
             // Venta
             // 

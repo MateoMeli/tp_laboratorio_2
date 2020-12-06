@@ -8,9 +8,9 @@ namespace Entidades
 {
     public static class Extension
     {
-        public static int PruebaExtension(this string a, string b)
+        public static string PrimeraLetraNombre(this Cliente a)
         {
-            return 0;
+            return a.Nombre.Substring(a.Nombre.Length - 1, 1);
         }
     }
 }
