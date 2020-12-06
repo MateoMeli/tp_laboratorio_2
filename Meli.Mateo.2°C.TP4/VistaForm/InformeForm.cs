@@ -57,7 +57,7 @@ namespace VistaForm
             StringBuilder sb = new StringBuilder();
             foreach(Cliente c in Atendidos)
             {
-                sb.AppendLine(c.ToString());
+                sb.AppendLine(c.Escribirlo());
             }
             return sb.ToString();
         }
@@ -65,7 +65,7 @@ namespace VistaForm
         private void btnLeer_Click(object sender, EventArgs e)
         {
             this.clientes = informeDao.ListarProductos();
-            this.rtbInforme.Text =  Imprimir();
+            this.rtbInforme.Text = Imprimir();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

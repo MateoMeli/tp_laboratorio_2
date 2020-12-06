@@ -46,6 +46,7 @@
     <Compile Include="Farmaceutico.cs" />
     <Compile Include="Farmacia.cs" />
     <Compile Include="InformeDAO.cs" />
+    <Compile Include="IToString.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

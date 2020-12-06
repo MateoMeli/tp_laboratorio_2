@@ -101,7 +101,7 @@ namespace VistaForm
             {
                 articulo = Producto;
                 cliente = new Cliente(Nombre, Apellido, articulo, Forma);
-                this.richTextBoxVentas.Text = cliente.ToString();
+                this.richTextBoxVentas.Text = cliente.Escribirlo();
                 farmacia += cliente;
                 t = new Thread(new ParameterizedThreadStart(informeDao.InsertarUnProducto));
                 t.Start(cliente);
@@ -137,7 +137,7 @@ namespace VistaForm
                     string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                     string rutaCompleta = ruta + @"\" + "Ticket" + $"{Apellido}" + ".txt";
                     streamWriter = new StreamWriter(rutaCompleta, false);
-                    streamWriter.WriteLine(cliente.ToString());
+                    streamWriter.WriteLine(cliente.Escribirlo());
                     MessageBox.Show("Ticket escrito con exito");
                 }
             }
@@ -158,7 +158,7 @@ namespace VistaForm
 
         private void Venta_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (t != null || t.IsAlive)
+            if (t != null && t.IsAlive)
             {
                 t.Abort();
             }

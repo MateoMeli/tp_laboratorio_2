@@ -80,7 +80,7 @@ namespace Entidades
             sb.AppendLine("CLIENTES");
             foreach(Cliente c in this.Clientes)
             {
-                sb.AppendLine(c.ToString());
+                sb.AppendLine(c.Escribirlo());
             }
             return sb.ToString();
         }

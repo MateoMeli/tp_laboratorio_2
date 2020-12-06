@@ -8,7 +8,7 @@ using Excepciones;
 
 namespace Entidades
 {
-    public class Cliente : Persona
+    public class Cliente : Persona, IToString<string>
     {
 
         private Articulo articulo;
@@ -88,16 +88,6 @@ namespace Entidades
             this.FechaYHora = fecha;
         }
 
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(base.ToString());
-            sb.AppendLine($"Producto: {articulo.Tipo} de precio: ${articulo.Precio}");
-            sb.AppendLine($"Abonando con: {this.formaDePago}, abona total de: ${this.Total}");
-            sb.AppendLine($"FECHA DE VENTA {this.fechaYHora.Date}");
-            return sb.ToString();
-        }
-
         private float PrecioFinal(float precio, FormaDePago forma)
         {
             float precioFinal = precio;
@@ -117,5 +107,14 @@ namespace Entidades
             return precioFinal;
         }
 
+        public string Escribirlo()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.ToString());
+            sb.AppendLine($"Producto: {articulo.Tipo} de precio: ${articulo.Precio}");
+            sb.AppendLine($"Abonando con: {this.formaDePago}, abona total de: ${this.Total}");
+            sb.AppendLine($"FECHA DE VENTA {this.fechaYHora.Date}");
+            return sb.ToString();
+        }
     }
 }
